@@ -1,0 +1,47 @@
+﻿
+
+--INSERTAR ROLES
+insert into rol(descripcion,esActivo) values
+('Administrador',1),
+('Empleado',1)
+
+go
+
+--INSERTAR USUARIOS
+insert into usuario(nombreApellidos,correo,idRol,Clave,esActivo) values
+('Yurgen Prado','ypradol@dfj.com',1,'12345',1),
+('Cesar Guerrero','crguerreror@dfj.com',2,'12345',1)
+
+go
+--INSERTAR CATEGORIAS
+insert into Categoria(descripcion,esActivo) values ('Pastillas',1)
+insert into Categoria(descripcion,esActivo) values ('Jarabes',1)
+insert into Categoria(descripcion,esActivo) values ('bevidas',1)
+insert into Categoria(descripcion,esActivo) values ('Ampollas',1)
+insert into Categoria(descripcion,esActivo) values ('Cremas',1)
+insert into Categoria(descripcion,esActivo) values ('Varios',1)
+
+go
+--INSERTAR PRODUCTOS
+
+insert into Producto(nombre,idCategoria,stock,precio,esActivo) values
+('Acetaminofen',1,200,800,1),
+('Noxpirin',1,200,2000,1),
+('Congestex',1,200,2500,1),
+('Acetaminofen jarabe 60ml',2,200,4500,1),
+('Dihidrocodehina',2,200,12000,1),
+('Guayacolato',2,200,8000,1),
+('Agua cristal 1000ml',3,200,1000,1),
+('Pedialyte',3,200,20,7000,1),
+('Hidrolit',3,200,6500,1),
+('B-Vid plus',4,200,12500,1),
+('Vitamina C',4,200,5000,1),
+('Gentamicina 160mg',4,200,2500,1),
+('Polvos Nailen N1',5,200,4000,1),
+('Polvos Nailen N2',6,200,4000,1),
+('Shapstick',6,200,6500,1)
+
+go
+
+--INSERTAR NUMERO VENTA INICIAL
+insert into NumeroDocumento(ultimo_Numero) values(0)

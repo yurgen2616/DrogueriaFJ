@@ -1,0 +1,26 @@
+.loginCard {
+  max-width: 328px !important;
+  margin: 2em auto;
+  text-align: center;
+  max-height: 600px;
+  background-color: rgba(0,0,0,0.3);
+  color:white;
+}
+
+.body {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+  background-color: #D3F9FF;
+  background: linear-gradient(rgb(141 208 247),rgb(172,156,255));
+}
+
+.header {
+  text-align: center;
+}
+
+.full-width {
+  width: 80%;
+}
+
